@@ -35,7 +35,7 @@
         })
         .switchLatest() // Ensure no out of order results
         .where(function (data) {
-            return data.length === 2; // Where we have data
+            return data.length >= 2; // Where we have data
         });
 
         searcher.subscribe(function (data) {
